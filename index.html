@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Trade India - Bentonite & Kaolin Clay Manufacturers</title>
+    <link rel="icon" type="image/jpeg" href="public/logogti_.jpg?v=1.0">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css?v=1.0">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="top-bar">
+                <a href="index.html" class="logo">
+                    <img src="public/logogti_.jpg" alt="Green Trade India Logo" class="logo-img">
+                    <h1>Green Trade India</h1>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-slider" id="home">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="public/IMG-20251101-WA0004.jpg" alt="Bentonite Products" loading="eager">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2>Welcome to Green Trade India</h2>
+                        <p>Direct manufacturers of high-quality Bentonite and Kaolin Clay products, ready for export worldwide.</p>
+                        <a href="contact.html" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="public/IMG-20251101-WA0005.jpg" alt="Kaolin Clay" loading="lazy">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2>Premium Kaolin Clay</h2>
+                        <p>High-purity kaolin clay for ceramics, paper, paint, and industrial applications.</p>
+                        <a href="#products" class="btn">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="public/IMG-20251101-WA0007.jpg" alt="Industrial Minerals">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2>Quality You Can Trust</h2>
+                        <p>Lab-verified minerals with seamless export solutions for global clients.</p>
+                        <a href="about.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="public/Gemini_Generated_Image_bpnqmabpnqmabpnq.png" alt="Industrial Processing">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2>Advanced Processing</h2>
+                        <p>State-of-the-art facilities for processing premium quality minerals.</p>
+                        <a href="#products" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="public/Gemini_Generated_Image_hfaod8hfaod8hfao.png" alt="Quality Control">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2>Certified Quality</h2>
+                        <p>All products undergo rigorous quality testing and certification.</p>
+                        <a href="about.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="public/Gemini_Generated_Image_m5lbeqm5lbeqm5lb.png" alt="Export Solutions">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2>Global Export Solutions</h2>
+                        <p>Seamless shipping and export services to clients worldwide.</p>
+                        <a href="contact.html" class="btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="public/Gemini_Generated_Image_qd1umoqd1umoqd1u.png" alt="Raw Materials">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2>Premium Raw Materials</h2>
+                        <p>Sourced directly from the best mineral deposits in India.</p>
+                        <a href="#products" class="btn">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="public/Gemini_Generated_Image_s46x9fs46x9fs46x.png" alt="Industrial Applications">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2>Versatile Applications</h2>
+                        <p>Our minerals serve diverse industries from ceramics to construction.</p>
+                        <a href="about.html" class="btn">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="public/Gemini_Generated_Image_yiomd3yiomd3yiom.png" alt="Sustainable Mining">
+                <div class="slide-content">
+                    <div class="container">
+                        <h2>Sustainable Practices</h2>
+                        <p>Committed to environmentally responsible mining and processing.</p>
+                        <a href="contact.html" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <button class="slider-btn prev" onclick="changeSlide(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn next" onclick="changeSlide(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- Dots -->
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>We are direct manufacturers of premium quality Bentonite and Kaolin Clay products</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Direct Manufacturers of Bentonite & Kaolin Clay</h3>
+                    <p>Green Trade India specializes in the manufacturing and export of high-quality Bentonite and Kaolin Clay products. Our materials are verified by certified labs and we offer customizable quantities to meet your specific requirements.</p>
+                    <p>With our seamless export solutions, we ensure safe and secure delivery of products to clients worldwide. Our dedicated customer support team is always ready to assist you with your needs.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-flask feature-icon"></i>
+                            <h4>Verified Quality</h4>
+                            <p>All our products are verified by certified laboratories</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-headset feature-icon"></i>
+                            <h4>Customer Support</h4>
+                            <p>Dedicated support team to assist with your requirements</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-boxes feature-icon"></i>
+                            <h4>Customizable Quantity</h4>
+                            <p>Flexible packaging and quantity options available</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-ship feature-icon"></i>
+                            <h4>Export Ready</h4>
+                            <p>Seamless export solutions for global clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>High-quality industrial minerals for various applications</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="public/IMG-20251101-WA0004.jpg" alt="Bentonite Clay" />
+                    </div>
+                    <div class="product-content">
+                        <h3>Bentonite</h3>
+                        <p>High-quality bentonite clay with excellent binding and absorption properties. Ideal for various industrial applications including foundry, drilling, and construction.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="public/IMG-20251101-WA0005.jpg" alt="Kaolin Clay" />
+                    </div>
+                    <div class="product-content">
+                        <h3>Kaolin Clay</h3>
+                        <p>Premium kaolin clay known for its whiteness and fine particle size. Used in ceramics, paper, paint, rubber, and many other industries.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="public/IMG-20251101-WA0007.jpg" alt="Kaolin Powder" />
+                    </div>
+                    <div class="product-content">
+                        <h3>Kaolin Powder</h3>
+                        <p>Processed kaolin powder with controlled particle size distribution. Suitable for specialized applications requiring specific physical properties.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for product inquiries and exports</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to contact us for any queries regarding our products, pricing, or export procedures. Our team will be happy to assist you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 8460592889</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>greentradeind@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Plot 113, Ward 10 A,<br>
+                                Opp IFFCO MAIN Gate,<br>
+                                Gandhidham, Kutch<br>
+                                Gujarat 370201</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form action="https://formspree.io/f/xvgwradk" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Green Trade India</h3>
+                    <p>Direct manufacturers of high-quality Bentonite and Kaolin Clay products with seamless export solutions for global clients.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/green-trade-india/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/greentradeindia?igsh=bnprZXR2bmswNHhx" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +91 8460592889</li>
+                        <li><i class="fas fa-envelope"></i> greentradeind@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Plot 113, Ward 10 A, Gandhidham, Kutch, Gujarat 370201</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Green Trade India. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            const icon = this.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.top-bar')) {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Hero Slider Functionality
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        let slideInterval;
+
+        function showSlide(index) {
+            // Remove active class from all slides and dots
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Handle wrap around
+            if (index >= slides.length) {
+                currentSlideIndex = 0;
+            } else if (index < 0) {
+                currentSlideIndex = slides.length - 1;
+            } else {
+                currentSlideIndex = index;
+            }
+            
+            // Add active class to current slide and dot
+            slides[currentSlideIndex].classList.add('active');
+            dots[currentSlideIndex].classList.add('active');
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlideIndex + direction);
+            resetInterval();
+        }
+
+        function currentSlide(index) {
+            showSlide(index);
+            resetInterval();
+        }
+
+        function autoSlide() {
+            currentSlideIndex++;
+            showSlide(currentSlideIndex);
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(autoSlide, 5000);
+        }
+
+        // Start auto sliding
+        slideInterval = setInterval(autoSlide, 5000);
+
+        // Pause slider on hover
+        const sliderContainer = document.querySelector('.hero-slider');
+        sliderContainer.addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+        });
+        sliderContainer.addEventListener('mouseleave', () => {
+            slideInterval = setInterval(autoSlide, 5000);
+        });
+    </script>
+</body>
+</html>

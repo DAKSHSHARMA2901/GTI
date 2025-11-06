@@ -1,0 +1,10 @@
+{
+	"name": "green-trade-india-site",
+	"private": true,
+	"version": "1.0.0",
+	"description": "Static website for Green Trade India",
+	"scripts": {
+		"dev": "npx --yes serve -l 5500 .",
+		"start": "npx --yes serve -l 5500 ."
+	}
+}

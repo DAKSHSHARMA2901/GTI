@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Green Trade India</title>
+    <link rel="icon" type="image/jpeg" href="public/logogti_.jpg?v=1.0">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css?v=1.0">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="top-bar">
+                <a href="index.html" class="logo">
+                    <img src="public/logogti_.jpg" alt="Green Trade India Logo" class="logo-img">
+                    <h1>Green Trade India</h1>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>We're here to help with your Bentonite and Kaolin Clay requirements</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to us for any queries regarding our products, pricing, or export procedures. Our team will be happy to assist you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3>Phone</h3>
+                                <p>+91 8460592889</p>
+                                <p>Mon - Fri, 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3>Email</h3>
+                                <p>greentradeind@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3>Address</h3>
+                                <p>Plot 113, Ward 10 A,<br>
+                                Opp IFFCO MAIN Gate,<br>
+                                Gandhidham, Kutch<br>
+                                Gujarat 370201</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm" action="https://formspree.io/f/xvgwradk" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="product">Product Interest</label>
+                            <select id="product" name="product" class="form-control">
+                                <option value="">Select a product</option>
+                                <option value="bentonite">Bentonite</option>
+                                <option value="kaolin-clay">Kaolin Clay</option>
+                                <option value="kaolin-powder">Kaolin Powder</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Enter your message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div id="map"></div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about our products and services</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What is the minimum order quantity for your products?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer flexible order quantities to meet our clients' needs. While we can accommodate small orders, we also provide volume discounts for larger quantities. Please contact us with your specific requirements for a customized quote.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you provide product samples?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide samples of our Bentonite and Kaolin Clay products for testing and evaluation purposes. Please contact us with your requirements, and we'll arrange for samples to be sent to you.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What countries do you export to?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We export our products to various countries across Asia, Europe, Middle East, Africa, and North America. Our experienced export team handles all documentation and logistics to ensure smooth delivery to your location.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do you ensure product quality?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All our products undergo rigorous quality checks in certified laboratories. We maintain strict quality control standards throughout our manufacturing process to ensure consistency and reliability in our products.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What packaging options do you offer?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer various packaging options including 25kg and 50kg bags, jumbo bags, and customized packaging based on client requirements. Our packaging is designed to ensure product safety during transportation and storage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Place an Order?</h2>
+            <p>Contact us today to discuss your Bentonite and Kaolin Clay requirements. Our team is ready to provide you with the best solutions for your business needs.</p>
+            <a href="tel:+918460592889" class="btn">Call Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Green Trade India</h3>
+                    <p>Direct manufacturers of high-quality Bentonite and Kaolin Clay products with seamless export solutions for global clients.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/green-trade-india/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/greentradeindia?igsh=bnprZXR2bmswNHhx" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +91 8460592889</li>
+                        <li><i class="fas fa-envelope"></i> greentradeind@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Plot 113, Ward 10 A, Gandhidham, Kutch, Gujarat 370201</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Green Trade India. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            const icon = this.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.top-bar')) {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Initialize Map
+        function initMap() {
+            // Coordinates for Gandhidham, Kutch, Gujarat
+            const gandhidham = [23.0833, 70.1333];
+            
+            // Create map
+            const map = L.map('map').setView(gandhidham, 12);
+            
+            // Add tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            
+            // Add marker
+            L.marker(gandhidham).addTo(map)
+                .bindPopup('Green Trade India<br>Plot 113, Ward 10 A, Gandhidham')
+                .openPopup();
+        }
+        
+        // Initialize map when page loads
+        document.addEventListener('DOMContentLoaded', initMap);
+        
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+        
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            
+            // Simple validation
+            if(name && email && subject) {
+                // In a real application, you would send this data to a server
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
