@@ -349,6 +349,33 @@ header {
     color: var(--primary);
 }
 
+.social-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.social-nav a:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+.social-nav i {
+    font-size: 16px;
+}
+
 .nav-icons {
     display: flex;
     align-items: center;
@@ -899,6 +926,12 @@ footer {
     
     .nav-links a:hover {
         background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .social-nav {
+        padding: 20px 30px;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
     
     .mobile-menu-toggle {
