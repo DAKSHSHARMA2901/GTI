@@ -471,11 +471,11 @@ header {
 }
 
 .slider-btn.prev {
-    left: 20px;
+    left: 10px;
 }
 
 .slider-btn.next {
-    right: 20px;
+    right: 10px;
 }
 
 /* Slider Dots */
@@ -555,8 +555,16 @@ header {
     }
     
     .slider-btn {
-        padding: 10px 15px;
-        font-size: 18px;
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+    
+    .slider-btn.prev {
+        left: 5px;
+    }
+    
+    .slider-btn.next {
+        right: 5px;
     }
 }
 
