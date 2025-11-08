@@ -555,16 +555,18 @@ header {
     }
     
     .slider-btn {
-        padding: 8px 12px;
-        font-size: 16px;
+        padding: 5px 8px;
+        font-size: 14px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 2px;
     }
     
     .slider-btn.prev {
-        left: 5px;
+        left: 0;
     }
     
     .slider-btn.next {
-        right: 5px;
+        right: 0;
     }
 }
 
